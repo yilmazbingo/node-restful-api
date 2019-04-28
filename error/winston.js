@@ -34,7 +34,7 @@ let options = {
 //If an error is thrown outside express, this middleware function cannot be called
 module.exports = function(err, req, res, next) {
   const logger = winston.createLogger({
-    format: format.combine(format.colorize(), format.simple()),
+    
 
     trasports: [
       winston.add(new winston.transports.File(options.file)),
