@@ -12,6 +12,8 @@ require("./index/mongoDB");
 require("loud-rejection/register"); //handles unhandled promise rejections
 const config = require("./config/defaults");
 
+
+//set an environment variable
 if (!config.jwtPrivateKey) {
   console.log("Error:jwtPrivateKey is not defined");
   process.exit(1);
